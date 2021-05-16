@@ -8,6 +8,7 @@ Restart=always
 RestartSec=1
 User=piwatcher
 ExecStart=piwatchdog.sh
+ExecStop=piwatcher watch 0
 
 [Install]
 WantedBy=multi-user.target
